@@ -1,6 +1,5 @@
 const express = require('express')
 const morgan = require('morgan')
-const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const app = express()
 
@@ -9,11 +8,11 @@ const app = express()
 const productRoute = require('./routes/product')
 const orderRoute = require('./routes/order')
 
-//데이터베이스 연결
-const dbaddress = "mongodb+srv://admin:admin12345@cluster0.n0hfu.mongodb.net/node_shoppingmall_test?retryWrites=true&w=majority"
+// 데이터베이스 연결
+require('./config/database')
 
-mongoose
-    .connect(dbaddress, {useNewUrlParser: true, useUnifiedTopology: true})
+
+
 
 //미들웨어 설정
 app.use(morgan('dev'))

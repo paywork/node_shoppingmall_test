@@ -5,7 +5,7 @@ const productModel = require('../models/product')
 
 //Product create API
 router.post('/', (req, res) => {
-    const newProduct = new prodcutModel({
+    const newProduct = new productModel({
         name: req.body.productname,
         price: req.body.productprice
     })
@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
 router.get('/total', (req, res) => {
     productModel
         .find()
-        .then(doc => {
+        .then(docs => {
             res.json({
                 message: 'total product data',
                 count: docs.length,
