@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-
 const orderModel = require('../models/order')
 
 // order create API
