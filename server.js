@@ -7,6 +7,7 @@ const app = express()
 
 const productRoute = require('./routes/product')
 const orderRoute = require('./routes/order')
+const userRoute = require('./routes/user')
 
 // 데이터베이스 연결
 require('./config/database')
@@ -20,11 +21,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 
-
-
+//라우팅
 app.use('/product', productRoute)
-
-
+app.use('/order', orderRoute)
+app.use('/user', userRoute)
 
 
 
