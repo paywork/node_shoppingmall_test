@@ -56,30 +56,22 @@ router.post('/signup', (req, res) =>{
 
 //로그인
 router.post('/login', (req, res) => {
-    //이메일 유무 체크 그 다음 패스워드 DB에 있는 패스워드 있는지 체킹(복호화) 그 다음 사용자 유저 정보를 암호화 이걸 토큰 이라고 한다
+
     userModel
         .findOne({email: req.body.email})
-        .then(user => {
+        .then(user =>{
             if(!user) {
                 return res.json({
                     message: "no email"
                 })
             } else {
                 bcrypt.compare(req.body.password, user.password, (err, result) => {
-                    if(err || result === false) {
+                    if (err || reulst === false) {
                         return res.json({
                             message: "password incorrect"
                         })
                     } else {
-                        res.json({
-                            userInfo: {
-                                id: user._id,
-                                name: user.name,
-                                email: user.email,
-                                phone: user.phone,
-                                password: user.password
-                            }
-                        })
+                        res.json(user)
                     }
                 })
             }
@@ -90,7 +82,6 @@ router.post('/login', (req, res) => {
             })
         })
 })
-
 
 
 
