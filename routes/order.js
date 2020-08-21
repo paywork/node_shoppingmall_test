@@ -45,7 +45,6 @@ router.get('/total', (req, res) => {
                     message: "no order count"
                 })
             } else {
-                console.log("--------------", items)
                 const response  = {
                     count: items.length,
                     products: items.map(item => {

@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4440beb-367d-494a-ae50-4a25e7aea1f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <workItem from="1597391146652" duration="4152000" />
       <workItem from="1597397869183" duration="9000" />
       <workItem from="1597820737391" duration="2668000" />
-      <workItem from="1597828262318" duration="5989000" />
+      <workItem from="1597828262318" duration="6960000" />
     </task>
     <servers />
   </component>
@@ -94,10 +92,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="284" width="840" height="676" key="search.everywhere.popup" timestamp="1597830024533">
-      <screen x="40" y="23" width="1752" height="1097" />
+    <state x="462" y="284" width="841" height="676" key="search.everywhere.popup" timestamp="1597982122161">
+      <screen x="39" y="23" width="1753" height="1097" />
     </state>
     <state x="465" y="284" width="670" height="676" key="search.everywhere.popup/0.-1417.3440.1417/42.23.1750.1097@42.23.1750.1097" timestamp="1597392464415" />
+    <state x="462" y="284" width="841" height="676" key="search.everywhere.popup/1792.-62.1080.1897/39.23.1753.1097@39.23.1753.1097" timestamp="1597982122161" />
     <state x="463" y="284" width="840" height="676" key="search.everywhere.popup/40.23.1752.1097@40.23.1752.1097" timestamp="1597830024533" />
   </component>
   <component name="XDebuggerManager">
